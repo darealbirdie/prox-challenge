@@ -1,0 +1,108 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.cover
+*.log
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.welding-agent-frontend/nextjs-frontend/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Obsidian vault (unless you want to version control your notes)
+# bidirectional prox/  # Uncomment if you DO want to version control the vault
+
+# Logs
+*.log
+backend.log
+
+# Test files (optional - adjust as needed)
+test_*.json
+*_test.py
+*_test.json
+test_results.json
+extracted_content.json
+knowledge_graph*.json
+verification_graph.json
+test_interactive.py
+test_image_analysis.py
+test_image_upload.py
+test_integration.py
+test_before_after.py
+test_claude_agent.py
+test_dry_run.py
+test_real_api.py
+test_pdf_utils.py
+test_config.py
+test_before_after.py
+test_graph.json
+test_knowledge_base.json
+final_test.py
+
+# Temporary files
+*.tmp
+*.temp
+cache/
+*.cache
+
+# Build outputs
+.welding-agent-frontend/nextjs-frontend/.next/
+.welding-agent-frontend/nextjs-frontend/out/
+.welding-agent-frontend/nextjs-frontend/build/
+
+# Environment examples (keep these!)
+!.env.example
+
+# Documentation builds (if any)
+_site/
+docs/_build/
+
+# Misc
+.claude_knowledge.json
+enhanced_pdf_knowledge.json
+knowledge_graph_final.json
+verification_graph.json
+*.summary
+*.summary.txt
+*.md~
+*_README.md
+*_SETUP.md
+*_GUIDE.md
+*_SUMMARY.md
+*_REPORT.md
+*_STATUS.md
+*_COMPLETE.md
+*_INTEGRATION.md
+*_DEPLOYMENT.md
+*_UPLOAD.md
+*_FEATURES.md
+*_FRONTEND.md
+*_APP.md
+*_CHAT*.js
+*_PAGE*.js
+*_CONTAINER*.js
+*_MESSAGE*.js
