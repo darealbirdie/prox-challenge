@@ -1,0 +1,18 @@
+.connectionStatus {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 1rem;
+}
+
+.statusConnected {
+  color: #4ade80; /* green-400 */
+}
+
+.statusDisconnected {
+  color: #f87171; /* red-400 */
+}

@@ -1,0 +1,1553 @@
+{
+  "nodes": [
+    {
+      "id": "Safety Warnings & Symbols",
+      "filename": "Safety Warnings and Symbols.md",
+      "tags": [
+        "safety",
+        "warnings",
+        "electrical",
+        "fumes",
+        "grounding"
+      ]
+    },
+    {
+      "id": "Aluminum MIG Tips",
+      "filename": "aluminum_mig_tips.md",
+      "tags": []
+    },
+    {
+      "id": "Aluminum MIG Tips",
+      "filename": "aluminum_mig_tips.md",
+      "tags": []
+    },
+    {
+      "id": "Owner's Manual - Key Technical Sections",
+      "filename": "Owners Manual - Technical Specifications.md",
+      "tags": [
+        "specifications",
+        "technical-data",
+        "duty-cycle",
+        "mig",
+        "tig",
+        "stick",
+        "grounding"
+      ]
+    },
+    {
+      "id": "Owner's Manual - Key Technical Sections",
+      "filename": "Owners Manual - Technical Specifications.md",
+      "tags": [
+        "specifications",
+        "technical-data",
+        "duty-cycle",
+        "mig",
+        "tig",
+        "stick",
+        "grounding"
+      ]
+    },
+    {
+      "id": "Owner's Manual - Key Technical Sections",
+      "filename": "Owners Manual - Technical Specifications.md",
+      "tags": [
+        "specifications",
+        "technical-data",
+        "duty-cycle",
+        "mig",
+        "tig",
+        "stick",
+        "grounding"
+      ]
+    },
+    {
+      "id": "Verification Test Note",
+      "filename": "verification_test_note.md",
+      "tags": []
+    },
+    {
+      "id": "Verification Test Note",
+      "filename": "verification_test_note.md",
+      "tags": []
+    },
+    {
+      "id": "Verification Test Note",
+      "filename": "verification_test_note.md",
+      "tags": []
+    },
+    {
+      "id": "Demo: Bidirectional Knowledge",
+      "filename": "demo_bidirectional_knowledge.md",
+      "tags": []
+    },
+    {
+      "id": "Demo: Bidirectional Knowledge",
+      "filename": "demo_bidirectional_knowledge.md",
+      "tags": []
+    },
+    {
+      "id": "Demo: Bidirectional Knowledge",
+      "filename": "demo_bidirectional_knowledge.md",
+      "tags": []
+    },
+    {
+      "id": "Quick Start Guide - Basic Welding Instructions",
+      "filename": "Quick Start Guide.md",
+      "tags": [
+        "quick-start",
+        "setup",
+        "loading",
+        "basic-instructions",
+        "safety"
+      ]
+    },
+    {
+      "id": "Quick Start Guide - Basic Welding Instructions",
+      "filename": "Quick Start Guide.md",
+      "tags": [
+        "quick-start",
+        "setup",
+        "loading",
+        "basic-instructions",
+        "safety"
+      ]
+    },
+    {
+      "id": "Quick Start Guide - Basic Welding Instructions",
+      "filename": "Quick Start Guide.md",
+      "tags": [
+        "quick-start",
+        "setup",
+        "loading",
+        "basic-instructions",
+        "safety"
+      ]
+    },
+    {
+      "id": "Safety Warnings & Symbols",
+      "filename": "Safety Warnings and Symbols.md",
+      "tags": [
+        "safety",
+        "warnings",
+        "electrical",
+        "fumes",
+        "grounding"
+      ]
+    },
+    {
+      "id": "Safety Warnings & Symbols",
+      "filename": "Safety Warnings and Symbols.md",
+      "tags": [
+        "safety",
+        "warnings",
+        "electrical",
+        "fumes",
+        "grounding"
+      ]
+    },
+    {
+      "id": "Test: MIG vs TIG Comparison",
+      "filename": "test_mig_vs_tig_comparison.md",
+      "tags": []
+    },
+    {
+      "id": "Test: MIG vs TIG Comparison",
+      "filename": "test_mig_vs_tig_comparison.md",
+      "tags": []
+    },
+    {
+      "id": "Test: MIG vs TIG Comparison",
+      "filename": "test_mig_vs_tig_comparison.md",
+      "tags": []
+    },
+    {
+      "id": "Extraction: owner-manual page 1",
+      "filename": "extraction_owner_manual_page_1.md",
+      "tags": []
+    },
+    {
+      "id": "Extraction: owner-manual page 1",
+      "filename": "extraction_owner_manual_page_1.md",
+      "tags": []
+    },
+    {
+      "id": "Extraction: owner-manual page 1",
+      "filename": "extraction_owner_manual_page_1.md",
+      "tags": []
+    },
+    {
+      "id": "Product Image Analysis",
+      "filename": "product_image_analysis.md",
+      "tags": []
+    },
+    {
+      "id": "Product Image Analysis",
+      "filename": "product_image_analysis.md",
+      "tags": []
+    },
+    {
+      "id": "Product Image Analysis",
+      "filename": "product_image_analysis.md",
+      "tags": []
+    },
+    {
+      "id": "Code Patterns & Techniques",
+      "filename": "Code Patterns and Techniques.md",
+      "tags": [
+        "code-patterns",
+        "python",
+        "best-practices",
+        "error-handling",
+        "ocr",
+        "multimodal-ai"
+      ]
+    },
+    {
+      "id": "Code Patterns & Techniques",
+      "filename": "Code Patterns and Techniques.md",
+      "tags": [
+        "code-patterns",
+        "python",
+        "best-practices",
+        "error-handling",
+        "ocr",
+        "multimodal-ai"
+      ]
+    },
+    {
+      "id": "Code Patterns & Techniques",
+      "filename": "Code Patterns and Techniques.md",
+      "tags": [
+        "code-patterns",
+        "python",
+        "best-practices",
+        "error-handling",
+        "ocr",
+        "multimodal-ai"
+      ]
+    },
+    {
+      "id": "Prox Welding Agent - Knowledge Base Index",
+      "filename": "Knowledge Base Index.md",
+      "tags": [
+        "tags",
+        "overview",
+        "specifications",
+        "safety",
+        "mig",
+        "tig",
+        "stick",
+        "setup",
+        "reference",
+        "technical",
+        "process-comparison",
+        "selection-chart",
+        "product-specs",
+        "welding-chart",
+        "controls",
+        "components",
+        "maintenance",
+        "quick-start",
+        "tags",
+        "index",
+        "knowledge-base",
+        "overview",
+        "navigation"
+      ]
+    },
+    {
+      "id": "Prox Welding Agent - Knowledge Base Index",
+      "filename": "Knowledge Base Index.md",
+      "tags": [
+        "tags",
+        "overview",
+        "specifications",
+        "safety",
+        "mig",
+        "tig",
+        "stick",
+        "setup",
+        "reference",
+        "technical",
+        "process-comparison",
+        "selection-chart",
+        "product-specs",
+        "welding-chart",
+        "controls",
+        "components",
+        "maintenance",
+        "quick-start",
+        "tags",
+        "index",
+        "knowledge-base",
+        "overview",
+        "navigation"
+      ]
+    },
+    {
+      "id": "Prox Welding Agent - Knowledge Base Index",
+      "filename": "Knowledge Base Index.md",
+      "tags": [
+        "tags",
+        "overview",
+        "specifications",
+        "safety",
+        "mig",
+        "tig",
+        "stick",
+        "setup",
+        "reference",
+        "technical",
+        "process-comparison",
+        "selection-chart",
+        "product-specs",
+        "welding-chart",
+        "controls",
+        "components",
+        "maintenance",
+        "quick-start",
+        "tags",
+        "index",
+        "knowledge-base",
+        "overview",
+        "navigation"
+      ]
+    },
+    {
+      "id": "Welding Selection Chart Guide",
+      "filename": "Welding Selection Chart Guide.md",
+      "tags": [
+        "selection-chart",
+        "how-to-choose",
+        "decision-tree",
+        "process-comparison"
+      ]
+    },
+    {
+      "id": "Welding Selection Chart Guide",
+      "filename": "Welding Selection Chart Guide.md",
+      "tags": [
+        "selection-chart",
+        "how-to-choose",
+        "decision-tree",
+        "process-comparison"
+      ]
+    },
+    {
+      "id": "Welding Selection Chart Guide",
+      "filename": "Welding Selection Chart Guide.md",
+      "tags": [
+        "selection-chart",
+        "how-to-choose",
+        "decision-tree",
+        "process-comparison"
+      ]
+    },
+    {
+      "id": "Welding Parameters - Quick Reference",
+      "filename": "Welding Parameters Quick Reference.md",
+      "tags": [
+        "parameters",
+        "settings",
+        "reference",
+        "welding-chart",
+        "specifications"
+      ]
+    },
+    {
+      "id": "Welding Parameters - Quick Reference",
+      "filename": "Welding Parameters Quick Reference.md",
+      "tags": [
+        "parameters",
+        "settings",
+        "reference",
+        "welding-chart",
+        "specifications"
+      ]
+    },
+    {
+      "id": "Welding Parameters - Quick Reference",
+      "filename": "Welding Parameters Quick Reference.md",
+      "tags": [
+        "parameters",
+        "settings",
+        "reference",
+        "welding-chart",
+        "specifications"
+      ]
+    },
+    {
+      "id": "Controls & Interior Components",
+      "filename": "Controls and Interior Components.md",
+      "tags": [
+        "controls",
+        "components",
+        "wire-feed",
+        "interior",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "Controls & Interior Components",
+      "filename": "Controls and Interior Components.md",
+      "tags": [
+        "controls",
+        "components",
+        "wire-feed",
+        "interior",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "Controls & Interior Components",
+      "filename": "Controls and Interior Components.md",
+      "tags": [
+        "controls",
+        "components",
+        "wire-feed",
+        "interior",
+        "maintenance"
+      ]
+    },
+    {
+      "id": "TIG / Stick Welding Specifications",
+      "filename": "TIG Stick Welding.md",
+      "tags": [
+        "tig",
+        "stick",
+        "smaw",
+        "specifications",
+        "process-comparison"
+      ]
+    },
+    {
+      "id": "TIG / Stick Welding Specifications",
+      "filename": "TIG Stick Welding.md",
+      "tags": [
+        "tig",
+        "stick",
+        "smaw",
+        "specifications",
+        "process-comparison"
+      ]
+    },
+    {
+      "id": "TIG / Stick Welding Specifications",
+      "filename": "TIG Stick Welding.md",
+      "tags": [
+        "tig",
+        "stick",
+        "smaw",
+        "specifications",
+        "process-comparison"
+      ]
+    },
+    {
+      "id": "MIG / Flux-Cored Wire Welding",
+      "filename": "MIG Flux-Cored Welding.md",
+      "tags": [
+        "mig",
+        "flux-cored",
+        "wire-welding",
+        "specifications",
+        "setup"
+      ]
+    },
+    {
+      "id": "MIG / Flux-Cored Wire Welding",
+      "filename": "MIG Flux-Cored Welding.md",
+      "tags": [
+        "mig",
+        "flux-cored",
+        "wire-welding",
+        "specifications",
+        "setup"
+      ]
+    },
+    {
+      "id": "MIG / Flux-Cored Wire Welding",
+      "filename": "MIG Flux-Cored Welding.md",
+      "tags": [
+        "mig",
+        "flux-cored",
+        "wire-welding",
+        "specifications",
+        "setup"
+      ]
+    },
+    {
+      "id": "OMNIPRO 220 - Product Overview",
+      "filename": "OMNIPRO 220 - Product Overview.md",
+      "tags": [
+        "overview",
+        "product-specs",
+        "omnipro220"
+      ]
+    },
+    {
+      "id": "OMNIPRO 220 - Product Overview",
+      "filename": "OMNIPRO 220 - Product Overview.md",
+      "tags": [
+        "overview",
+        "product-specs",
+        "omnipro220"
+      ]
+    },
+    {
+      "id": "OMNIPRO 220 - Product Overview",
+      "filename": "OMNIPRO 220 - Product Overview.md",
+      "tags": [
+        "overview",
+        "product-specs",
+        "omnipro220"
+      ]
+    },
+    {
+      "id": "Testing Patterns",
+      "filename": "Testing Patterns.md",
+      "tags": []
+    },
+    {
+      "id": "Testing Patterns",
+      "filename": "Testing Patterns.md",
+      "tags": []
+    },
+    {
+      "id": "Testing Patterns",
+      "filename": "Testing Patterns.md",
+      "tags": []
+    },
+    {
+      "id": "PDF Functions Reference",
+      "filename": "PDF Functions Reference.md",
+      "tags": []
+    },
+    {
+      "id": "PDF Functions Reference",
+      "filename": "PDF Functions Reference.md",
+      "tags": []
+    },
+    {
+      "id": "PDF Functions Reference",
+      "filename": "PDF Functions Reference.md",
+      "tags": []
+    },
+    {
+      "id": "PDF Extraction System",
+      "filename": "PDF Extraction System.md",
+      "tags": []
+    },
+    {
+      "id": "PDF Extraction System",
+      "filename": "PDF Extraction System.md",
+      "tags": []
+    },
+    {
+      "id": "PDF Extraction System",
+      "filename": "PDF Extraction System.md",
+      "tags": []
+    },
+    {
+      "id": "Welcome.md",
+      "filename": "Welcome.md",
+      "tags": []
+    },
+    {
+      "id": "Welcome.md",
+      "filename": "Welcome.md",
+      "tags": []
+    },
+    {
+      "id": "Welcome.md",
+      "filename": "Welcome.md",
+      "tags": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "Safety Warnings & Symbols",
+      "target": "Aluminum MIG Tips",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Safety Warnings & Symbols",
+      "target": "Quick Start Guide - Basic Welding Instructions",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Aluminum MIG Tips",
+      "target": "Safety Warnings & Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Aluminum MIG Tips",
+      "target": "MIG / Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Aluminum MIG Tips",
+      "target": "Safety Warnings & Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Aluminum MIG Tips",
+      "target": "MIG / Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Owner's Manual - Key Technical Sections",
+      "target": "Demo: Bidirectional Knowledge",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Owner's Manual - Key Technical Sections",
+      "target": "Demo: Bidirectional Knowledge",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Owner's Manual - Key Technical Sections",
+      "target": "Demo: Bidirectional Knowledge",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Verification Test Note",
+      "target": "Knowledge Base Index",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Verification Test Note",
+      "target": "Knowledge Base Index",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Verification Test Note",
+      "target": "Knowledge Base Index",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Owner's Manual - Key Technical Sections",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Knowledge Base Index",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Code Patterns and Techniques",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Owner's Manual - Key Technical Sections",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Knowledge Base Index",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Code Patterns and Techniques",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Owner's Manual - Key Technical Sections",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Knowledge Base Index",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Demo: Bidirectional Knowledge",
+      "target": "Code Patterns and Techniques",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Quick Start Guide - Basic Welding Instructions",
+      "target": "Safety Warnings & Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Quick Start Guide - Basic Welding Instructions",
+      "target": "Safety Warnings & Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Quick Start Guide - Basic Welding Instructions",
+      "target": "Safety Warnings & Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Safety Warnings & Symbols",
+      "target": "Aluminum MIG Tips",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Safety Warnings & Symbols",
+      "target": "Quick Start Guide - Basic Welding Instructions",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Safety Warnings & Symbols",
+      "target": "Aluminum MIG Tips",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Safety Warnings & Symbols",
+      "target": "Quick Start Guide - Basic Welding Instructions",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Test: MIG vs TIG Comparison",
+      "target": "MIG / Flux-Cored Wire Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Test: MIG vs TIG Comparison",
+      "target": "TIG / Stick Welding Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Test: MIG vs TIG Comparison",
+      "target": "MIG / Flux-Cored Wire Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Test: MIG vs TIG Comparison",
+      "target": "TIG / Stick Welding Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Test: MIG vs TIG Comparison",
+      "target": "MIG / Flux-Cored Wire Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Test: MIG vs TIG Comparison",
+      "target": "TIG / Stick Welding Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Code Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "OMNIPRO 220 - Product Overview",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Safety Warnings and Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Safety Warnings and Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "OMNIPRO 220 - Product Overview",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "bracketed links",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Code Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "OMNIPRO 220 - Product Overview",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Safety Warnings and Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Safety Warnings and Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "OMNIPRO 220 - Product Overview",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "bracketed links",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Code Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "OMNIPRO 220 - Product Overview",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Safety Warnings and Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Safety Warnings and Symbols",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "OMNIPRO 220 - Product Overview",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Parameters Quick Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "TIG Stick Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "MIG Flux-Cored Welding",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Quick Start Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Controls and Interior Components",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Welding Selection Chart Guide",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "Owners Manual - Technical Specifications",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "bracketed links",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Prox Welding Agent - Knowledge Base Index",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Testing Patterns",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "PDF Extraction System",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Functions Reference",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Code Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Code Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "PDF Functions Reference",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Testing Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Demo Usage",
+      "type": "wiki_link"
+    },
+    {
+      "source": "PDF Extraction System",
+      "target": "Code Patterns",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Welcome.md",
+      "target": "create a link",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Welcome.md",
+      "target": "create a link",
+      "type": "wiki_link"
+    },
+    {
+      "source": "Welcome.md",
+      "target": "create a link",
+      "type": "wiki_link"
+    }
+  ],
+  "metadata": {
+    "vault": "/Users/blackswan/Documents/web3 agents/prox-challenge/bidirectional prox",
+    "generated": "2026-04-29T02:45:34.806800",
+    "total_notes": 62
+  }
+}

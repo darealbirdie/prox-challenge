@@ -1,0 +1,81 @@
+{
+  "pdf_summary": {
+    "owner-manual.pdf": {
+      "total_pages_with_tables": 24,
+      "table_pages": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        19,
+        20,
+        22,
+        23,
+        29,
+        30,
+        32,
+        35,
+        37,
+        40,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "total_tables_found": 60
+    },
+    "quick-start-guide.pdf": {
+      "total_pages_with_tables": 2,
+      "table_pages": [
+        1,
+        2
+      ],
+      "total_tables_found": 4
+    },
+    "selection-chart.pdf": {
+      "total_pages_with_tables": 0,
+      "table_pages": [],
+      "total_tables_found": 0
+    }
+  },
+  "table_locations": {
+    "owner-manual.pdf": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      16,
+      19,
+      20,
+      22,
+      23,
+      29,
+      30,
+      32,
+      35,
+      37,
+      40,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "quick-start-guide.pdf": [
+      1,
+      2
+    ],
+    "selection-chart.pdf": []
+  },
+  "extraction_timestamp": "2024-01-01T00:00:00Z"
+}
