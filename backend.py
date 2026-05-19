@@ -8,8 +8,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 load_dotenv()
-
+import threading
 from claude_agent import ProxWeldingAgent
+from flask import send_from_directory
 
 app = Flask(__name__)
 CORS(app)
@@ -104,19 +105,26 @@ def upload_pdf():
 
 @app.route('/api/autonomous/start', methods=['POST'])
 def start_autonomous():
-    """Start autonomous mode"""
     data = request.json or {}
-    
-    try:
+
+    def run_agent():
         agent.start_autonomous_mode(
             watch_dirs=data.get('watch_dirs', None),
             poll_interval=data.get('poll_interval', 30),
             auto_upload_images=data.get('auto_upload_images', True),
             auto_upload_pdfs=data.get('auto_upload_pdfs', True)
         )
-        return jsonify({'status': 'started'})
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+
+    threading.Thread(target=run_agent, daemon=True).start()
+
+    return jsonify({'status': 'started'})
+
+@app.route('/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory(
+        'extracted_images',
+        filename
+    )
 
 @app.route('/api/autonomous/stop', methods=['POST'])
 def stop_autonomous():

@@ -11,6 +11,8 @@ import re
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Optional
+from pdf_utils import extract_pdf_images
+from pdf_compiler import PDFKnowledgeCompiler
 
 # Load .env file
 load_dotenv()
@@ -49,33 +51,59 @@ RELEVANT KNOWLEDGE:
 {context}
 
 GUIDELINES:
-1. Be helpful, patient, and encouraging - the user may be a beginner
-2. Use clear, simple language but don't oversimplify technical details
-3. When appropriate, generate visual aids using Mermaid diagrams, Python code for charts, or other artifacts
-4. If a question requires visual explanation, create a diagram or chart
-5. For setup questions, provide step-by-step procedures
-6. Always prioritize safety - mention precautions when relevant
-7. If information is unclear or missing, ask clarifying questions
-8. For complex procedures, break them down into manageable steps
+1. Be helpful, patient, and encouraging
+2. Use clear language while preserving technical accuracy
+3. Prioritize visual explanations whenever they reduce cognitive load
+4. Ask clarifying questions if setup/process is ambiguous
+5. Always prioritize welding safety
+6. Break complex procedures into sequential steps
+7. Use the retrieved documentation as ground truth
+8. Prefer diagrams over prose when spatial or procedural understanding matters
 
-ARTIFACT GENERATION:
-- When creating visual content like diagrams, charts, or complex formatted output, wrap it in artifact blocks
-- Use Mermaid for diagrams (flowcharts, schematics, decision trees) 
-- Use Python (matplotlib/plotly) for charts and calculators
-- Use HTML/CSS for interactive elements, tables, or formatted content when helpful
-- Clearly label all artifacts and explain what they show
-- Format artifacts as: 
-  <artifact type="mermaid|python|html">
-  [content]
-  </artifact>
-- Only create artifacts for content that benefits from visual/formatted presentation
-- Keep artifacts self-contained and understandable on their own
+ARTIFACT DECISION RULES:
+If a response involves:
+- spatial relationships → use Mermaid diagrams
+- step-by-step processes → use flowcharts
+- troubleshooting → use decision trees
+- hardware wiring or polarity → use schematics/diagrams
+- parameter tuning → use tables or interactive HTML artifacts
+- comparisons → use tables
+- calculations → use HTML calculators or formatted formulas
+- configurations/settings → use structured UI or markdown tables
 
-TONE:
-- Friendly and approachable
-- Professional but not overly technical
-- Empathetic to user frustration
-- Confident in your expertise
+Never default to plain text if a diagram, table, or interactive artifact would explain it better.
+
+MULTIMODAL BEHAVIOR:
+- If retrieved context references diagrams, panels, controls, sockets, wiring, or images:
+  explain visually using artifacts.
+- If troubleshooting is involved:
+  create diagnostic flows.
+- If setup is involved:
+  generate visual setup guides.
+- If the answer is cognitively dense:
+  use visual decomposition.
+
+ARTIFACT FORMAT:
+Artifacts MUST be wrapped EXACTLY like this:
+
+<artifact type="mermaid">
+flowchart TD
+A --> B
+</artifact>
+
+Valid artifact types:
+- mermaid
+- html
+- markdown
+- json
+
+IMPORTANT RULES:
+- Never wrap artifact blocks in markdown code fences
+- Artifacts must be self-contained
+- Mermaid artifacts must use valid Mermaid syntax
+- HTML artifacts should be standalone and visually clean
+- Use artifacts proactively, not reactively
+- The best answer is often visual first, text second
 """
     
     def answer_question(self, question: str) -> Dict[str, Any]:
@@ -86,13 +114,21 @@ TONE:
         # This replaces the duplicate PDF extraction in the old version!
         results = self.vault.search(question, k=5)
         
-        if not results:
+        # Also query PDFs directly for fresh evidence
+        pdf_evidence = self.vault.query_pdf(question)
+        
+        if not results and not pdf_evidence:
             print("  ℹ️  No relevant knowledge found, using general expertise")
             context = "No specific documentation matched the query."
         else:
             print(f"  ✓ Found {len(results)} relevant knowledge sources")
             for r in results:
                 print(f"    - {r['filename']}")
+            
+            if pdf_evidence:
+                print(f"  ✓ Found {len(pdf_evidence)} PDF evidence sources")
+                for e in pdf_evidence:
+                    print(f"    - {e['source']} (page {e['page']})")
             
             # Format results as context for Claude
             context_parts = []
@@ -102,6 +138,14 @@ TONE:
 --- Source {i+1}: {result['filename']} ---
 {excerpt}
 """)
+            
+            # Add PDF evidence to context
+            for i, evidence in enumerate(pdf_evidence):
+                context_parts.append(f"""
+--- PDF Evidence {i+1}: {evidence['source']} (page {evidence['page']}) ---
+{evidence['excerpt']}
+""")
+            
             context = "\n".join(context_parts)
         
         # Create system prompt with knowledge context
@@ -128,7 +172,7 @@ TONE:
             self.conversation_history.append({
                 'question': question,
                 'response': response,
-                'sources': [r['filename'] for r in results],
+                'sources': [r['filename'] for r in results] + [e['source'] for e in pdf_evidence],
                 'timestamp': datetime.now().isoformat()
             })
             
@@ -138,8 +182,8 @@ TONE:
             return {
                 'answer': answer_text,
                 'artifacts': artifacts,
-                'sources': [r['filename'] for r in results],
-                'context_used': len(results) > 0
+                'sources': [r['filename'] for r in results] + [e['source'] for e in pdf_evidence],
+                'context_used': len(results) > 0 or len(pdf_evidence) > 0
             }
         except Exception as e:
             print(f"  ✗ Claude API error: {e}")
@@ -274,10 +318,17 @@ Include all necessary imports and make the code as clear as possible."""
         return result
     
     def upload_pdf(self, pdf_path: str, note_title: str = None, 
-                   extract_pages: List[int] = None, create_summary: bool = True):
+                    extract_pages: List[int] = None, create_summary: bool = True):
         """
         Upload a PDF, extract all content, and create a searchable note.
-        Uses OCR and multimodal analysis for image-heavy pages.
+        Uses the PDF Knowledge Compiler for structured ingestion.
+        
+        Pipeline:
+        PDF → extract pages →
+            ├── text → vault note
+            ├── images → extracted files + image analysis note
+            ├── tables → structured blocks
+            └── links between them
         
         Args:
             pdf_path: Path to PDF file
@@ -288,54 +339,27 @@ Include all necessary imports and make the code as clear as possible."""
         Returns:
             Dict with extraction results
         """
-        from pdf_utils import get_pdf_info, extract_page_content
         import os
         
         print(f"\n📑 Uploading PDF: {pdf_path}")
-        info = get_pdf_info(pdf_path)
-        print(f"  Pages: {info['total_pages']}, Size: {info['file_size']} bytes")
         
-        # Extract all pages
-        pages_data = []
-        page_range = extract_pages if extract_pages else range(info['total_pages'])
-        
-        for page_num in page_range:
-            try:
-                page_data = extract_page_content(pdf_path, page_num)
-                if page_data:
-                    pages_data.append(page_data)
-                    print(f"  ✓ Extracted page {page_num + 1}/{info['total_pages']}")
-            except Exception as e:
-                print(f"  ⚠ Page {page_num + 1} error: {e}")
-        
-        # Create consolidated note
-        title = note_title or os.path.basename(pdf_path).replace('.pdf', '')
-        title = title.replace('-', ' ').replace('_', ' ').title()
-        
-        content_parts = [f"# {title}\n",
-                        f"**Source:** `{os.path.basename(pdf_path)}`\n",
-                        f"**Pages:** {info['total_pages']}\n",
-                        f"**File Size:** {info['file_size']} bytes\n",
-                        f"**Extracted:** {len(pages_data)} pages\n",
-                        f"\n---\n"]
-        
-        for i, page in enumerate(pages_data):
-            content_parts.append(f"## Page {page['page_number'] + 1}\n")
-            if page.get('text'):
-                content_parts.append(f"\n{page['text'][:2000]}...\n")
-            if page.get('image_analysis'):
-                content_parts.append(f"\n**Image Analysis:** {page['image_analysis'].get('general_caption', 'N/A')}\n")
-            content_parts.append("\n---\n")
-        
-        content = ''.join(content_parts)
-        note_path = self.vault.write_note(title, content, tags=['pdf', 'uploaded', 'second-brain'])
-        
-        print(f"  ✓ Created note: {note_path.name}")
+        # Use the new PDF Knowledge Compiler
+        compiler = PDFKnowledgeCompiler(vault=self.vault)
+        result = compiler.compile_pdf(
+            pdf_path,
+            title=note_title,
+            extract_pages=extract_pages,
+            analyze_images=True,
+            create_summary=create_summary
+        )
         
         return {
-            'pdf': info,
-            'pages_extracted': len(pages_data),
-            'note_path': str(note_path)
+            'pdf': result['pdf'],
+            'pages_extracted': result['pages_extracted'],
+            'images_extracted': len(result['images']),
+            'image_notes_created': len(result['image_notes']),
+            'note_path': result['note_path'],
+            'manifest_path': result['manifest_path']
         }
     
     def get_knowledge_stats(self) -> Dict[str, Any]:

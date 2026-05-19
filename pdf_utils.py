@@ -4,7 +4,8 @@ from typing import Optional, Dict, Any, List, Union
 import pytesseract
 from PIL import Image
 import io
-
+import fitz
+from pathlib import Path
 # Multimodal image analysis imports
 try:
     from transformers import BlipProcessor, BlipForConditionalGeneration
@@ -138,6 +139,70 @@ def extract_all_tables(pdf_path: str) -> List[Dict[str, Any]]:
 
     return results
 
+def extract_pdf_images(
+    pdf_path: str,
+    output_dir: str = "extracted_images"
+) -> List[Dict[str, Any]]:
+    """
+    Extract all embedded images from a PDF.
+
+    Returns:
+        List of image metadata dictionaries
+    """
+
+    if not os.path.exists(pdf_path):
+        raise FileNotFoundError(f"PDF file not found: {pdf_path}")
+
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+
+    extracted_images = []
+
+    try:
+        doc = fitz.open(pdf_path)
+
+        for page_index in range(len(doc)):
+            page = doc[page_index]
+
+            image_list = page.get_images(full=True)
+
+            for img_index, img in enumerate(image_list):
+                try:
+                    xref = img[0]
+
+                    base_image = doc.extract_image(xref)
+
+                    image_bytes = base_image["image"]
+                    image_ext = base_image["ext"]
+
+                    filename = (
+                        f"{Path(pdf_path).stem}"
+                        f"_page_{page_index+1}"
+                        f"_img_{img_index+1}.{image_ext}"
+                    )
+
+                    image_path = os.path.join(
+                        output_dir,
+                        filename
+                    )
+
+                    with open(image_path, "wb") as f:
+                        f.write(image_bytes)
+
+                    extracted_images.append({
+                        "page": page_index + 1,
+                        "path": image_path,
+                        "filename": filename,
+                        "pdf": os.path.basename(pdf_path)
+                    })
+
+                except Exception as e:
+                    print(f"Warning: Failed image extraction: {e}")
+
+        return extracted_images
+
+    except Exception as e:
+        print(f"PDF image extraction failed: {e}")
+        return []
 
 def analyze_image_content(page) -> Dict[str, Any]:
     """

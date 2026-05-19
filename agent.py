@@ -297,7 +297,20 @@ class ObsidianVault:
             
             try:
                 info = get_pdf_info(pdf_path)
-                for page_num in range(min(3, info['total_pages'])):
+                # Search more pages - duty cycle is on page 7, 29+
+                # Also search pages that are likely to contain technical specs
+                pages_to_search = set()
+                # Always check first few pages
+                for i in range(min(5, info['total_pages'])):
+                    pages_to_search.add(i)
+                # For duty/cycle/mig queries, also check pages 6-10 and 28-35
+                if any(w in q for w in ['duty', 'cycle', 'mig', '200a', 'specification', 'spec']):
+                    for i in range(6, min(11, info['total_pages'])):
+                        pages_to_search.add(i)
+                    for i in range(28, min(36, info['total_pages'])):
+                        pages_to_search.add(i)
+                
+                for page_num in sorted(pages_to_search):
                     content = extract_page_content(pdf_path, page_num)
                     if content:
                         text_lower = content['text'].lower()
@@ -348,10 +361,10 @@ class ObsidianVault:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
             addition = f"\n\n## Update - {timestamp}\n\n{content}"
             filepath.write_text(existing + addition)
-            print(f"  → Updated: {filepath.name}")
+            print(f"  [Updated] {filepath.name}")
         else:
             filepath.write_text(full_content)
-            print(f"  → Created: {filepath.name}")
+            print(f"  [Created] {filepath.name}")
         
         # Reload vault
         self._load_vault_notes()
@@ -371,7 +384,7 @@ class ObsidianVault:
         """Enrich note with PDF extraction"""
         note = self.read_note(note_title)
         if not note:
-            print(f"  ✗ Note not found: {note_title}")
+            print(f"  [Error] Note not found: {note_title}")
             return
         
         filepath = note['filepath']
@@ -397,7 +410,7 @@ class ObsidianVault:
         if self.embedding_model:
             self._build_vector_index()
         
-        print(f"  → Enriched: {note_title}")
+        print(f"  [Enriched] {note_title}")
     
     def link_notes(self, note1: str, note2: str, relation: str = "related"):
         """Create bidirectional link between notes"""
@@ -405,7 +418,7 @@ class ObsidianVault:
         n2 = self.read_note(note2)
         
         if not n1 or not n2:
-            print(f"  ✗ Note(s) not found")
+            print(f"  [Error] Note(s) not found")
             return
         
         # Update note1
@@ -433,7 +446,7 @@ class ObsidianVault:
         if self.embedding_model:
             self._build_vector_index()
         
-        print(f"  → Linked: {note1} ↔ {note2}")
+        print(f"  [Linked] {note1} <-> {note2}")
     
     # ============ CLAUDE TOOLS: MULTIMODAL ============
     
@@ -453,7 +466,7 @@ class ObsidianVault:
         result = analyze_standalone_image(image_path)
         
         if "error" in result:
-            print(f"  ✗ Analysis failed: {result['error']}")
+            print(f"  [Error] Analysis failed: {result['error']}")
             return
         
         img_name = Path(image_path).stem
